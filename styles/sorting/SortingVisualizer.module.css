@@ -1,0 +1,137 @@
+.MainC {
+  position: relative;
+}
+
+.Container {
+  position: relative;
+  height: var(--visualizer-container-height);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+.BlogContainer {
+  padding: 3rem 50px;
+  color: var(--text);
+}
+
+.BlogContainer h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 8rem;
+}
+
+.HeightMarkingContainer {
+  position: absolute;
+  width: 100%;
+  height: var(--visualizer-container-height);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 40px;
+  background: var(--visualizer-bg);
+  color: var(--text);
+}
+
+.HeightMarker {
+  width: 100%;
+  border-bottom: 1px dashed var(--border-color);
+}
+
+.SortingTerminalC {
+  padding: 3rem 50px;
+  background-color: var(--bg-blue);
+  border-bottom: 1px solid var(--bg-blue-2);
+  transition: all 150ms ease-out;
+}
+
+.TerminalHeading {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 2rem;
+  color: var(--text);
+  text-decoration: underline;
+  transition: all 150ms ease-out;
+}
+
+.SortingTerminal {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+  row-gap: 1rem;
+  transition: all 150ms ease-out;
+}
+
+.ColorPurple {
+  color: var(--purple);
+}
+
+.ColorText {
+  color: var(--text);
+}
+
+.ColorOrange {
+  color: var(--orange);
+}
+
+.ColorBlue {
+  color: var(--blue);
+}
+
+.FlexWrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.OptionsHeaderC {
+  width: 100%;
+  height: var(--option-header-height);
+  display: grid;
+  grid-template-columns:
+    auto var(--option-header-height) var(--option-header-height)
+    var(--option-header-height);
+  background-color: var(--bg-blue);
+  border-top: 1px solid var(--bg-blue-2);
+  border-bottom: 1px solid var(--bg-blue-2);
+}
+
+.OptionHeaderIconsC {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-left: 1px solid var(--bg-blue-2);
+  color: var(--bg-blue-2);
+  transform: all 150ms ease-out;
+}
+
+.OptionHeaderIconsC svg {
+  transform: all 150ms ease-out;
+}
+
+.OptionHeaderIconsC:hover {
+  cursor: pointer;
+  color: var(--blue);
+}
+
+.OptionHeaderTitle {
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+  color: var(--blue);
+  font-size: 20px;
+  opacity: 0.7;
+}
+
+.CodePreTag {
+  white-space: pre-wrap;
+  background: var(--bg-blue);
+  padding: 50px;
+  border-bottom: 1px solid var(--bg-blue-2);
+}
